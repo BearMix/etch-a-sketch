@@ -64,19 +64,3 @@ button:hover {
   background-color: #ffe7c1;
   transition: background-color 0.3s, opacity 0.3s;
 }
-
-@madia (max-width: 600px) {
-  .container {
-    width: 90%;
-    height: 90%;
-  }
-
-  button {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-}
