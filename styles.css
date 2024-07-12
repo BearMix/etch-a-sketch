@@ -1,49 +1,82 @@
-* {
-  padding: 0;
+body, html {
   margin: 0;
-  box-sizing: border-box;
-}
-
-.title-container {
-  margin: 22px auto;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 body {
-  display: flex;
-  background-color: aqua;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(45deg, #f6d365, #fda085);
+}
+
+.title {
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 20px;
+  font-family: 'Permanent Marker', cursive;
+  margin-top: 0;
+}
+
+.btn-container {
+  margin-top: 12px;
+}
+
+.btn {
+  margin: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eea654;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3 ease;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+button:hover {
+  background-color: #eb791c;
+  transform: scale(1.1);
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   width: 60vh;
   height: 60vh;
-  flex-wrap: wrap;
+  border: 2px solid #ccc;
+  background-color: white;
+  position: relative;
+  max-width: 600px;
+  max-height: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .grid {
-  background-color: antiquewhite;
-  border: 1px solid black;
-  border-radius: 1%;
-  transition: background-color 0.3s, filter 0.3s;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  opacity: 1;
+  background-color: #ffe7c1;
+  transition: background-color 0.3s, opacity 0.3s;
 }
 
-.btn-container {
-  margin: 22px auto;
-  display: flex;
+@madia (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: 90%;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
 }
-
-.btn {
-  margin-left: 22px;
-  padding: 12px 22px;
-  width: 180px;
-  border: none;
-  border-radius: 8%;
-  background-color: aquamarine;
-  font-size: 16px;
-  color: rgb(6, 1, 17);
-}
-
-
